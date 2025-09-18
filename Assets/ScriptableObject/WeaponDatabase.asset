@@ -12,11 +12,41 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: WeaponDatabase
   m_EditorClassIdentifier: Assembly-CSharp::EnemyDatabase
-  weaponSettings:
+  weaponDatas:
   - weaponData:
-      Name: "\u77ED\u5263"
-      attackPower: 10
-      attackMinRange: 10
-      attackMaxRange: 10
+      Name: "\u6728\u306E\u5263"
+      Kind: 0
+      attackPower: 5
+      attackMinLength: 3
+      attackMaxLength: 3
+      attackRange: {x: 1, y: 1, z: 1}
+    weaponPrefab: {fileID: 0}
+    weaponAttackPrefab: {fileID: 7664247300431019302, guid: cb7604ebaf60131429789aac9a250e00,
+      type: 3}
+  - weaponData:
+      Name: "\u6728\u306E\u77ED\u5263"
+      Kind: 1
+      attackPower: 5
+      attackMinLength: 3
+      attackMaxLength: 3
+      attackRange: {x: 1, y: 1, z: 1}
+    weaponPrefab: {fileID: 0}
+    weaponAttackPrefab: {fileID: 0}
+  - weaponData:
+      Name: "\u6728\u306E\u5F13"
+      Kind: 2
+      attackPower: 5
+      attackMinLength: 3
+      attackMaxLength: 3
+      attackRange: {x: 1, y: 1, z: 1}
+    weaponPrefab: {fileID: 0}
+    weaponAttackPrefab: {fileID: 0}
+  - weaponData:
+      Name: "\u6728\u306E\u30AF\u30ED\u30B9\u30DC\u30A6"
+      Kind: 3
+      attackPower: 5
+      attackMinLength: 3
+      attackMaxLength: 3
+      attackRange: {x: 1, y: 1, z: 1}
     weaponPrefab: {fileID: 0}
     weaponAttackPrefab: {fileID: 0}
