@@ -253,6 +253,7 @@ GameObject:
   - component: {fileID: 1566162423}
   - component: {fileID: 1566162427}
   - component: {fileID: 1566162426}
+  - component: {fileID: 1566162428}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -347,8 +348,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_sNextScene: SceneGame
-  m_Image: {fileID: 1266565354111947037, guid: 11d0967dc6c84eb499ba0e3435e7b769, type: 3}
-  m_fSpeed: 0.1
+  m_Image: {fileID: 0}
+  m_fSpeed: 0
 --- !u!114 &1566162427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -393,6 +394,21 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &1566162428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566162422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3687e53810e369e4b8c94732dbb24e27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_sNextScene: SceneTitle
+  m_Image: {fileID: 1266565354111947037, guid: 11d0967dc6c84eb499ba0e3435e7b769, type: 3}
+  m_fSpeed: 0.1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
