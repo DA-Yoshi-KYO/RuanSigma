@@ -8,8 +8,9 @@ public class SceneTransition : MonoBehaviour
 {
     [SerializeField] string m_sNextScene;
 
-    [SerializeField] public Image m_Image;
-    [SerializeField] public float m_fSpeed;
+    [SerializeField] public float m_fTime;
+
+    private Image m_Image;
 
     private bool m_bFadeIn = false;
     private bool m_bFadeOut = false;
@@ -22,11 +23,12 @@ public class SceneTransition : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        m_Image = GetComponent<Image>();
         m_bFadeIn = true;
         m_fRed = m_Image.color.r;
         m_fGreen = m_Image.color.g;
         m_fblue = m_Image.color.b;
-        m_fAlpha = m_Image.color.a;
+        m_fAlpha = 1.0f;
     }
 
     // Update is called once per frame
@@ -42,15 +44,18 @@ public class SceneTransition : MonoBehaviour
             FadeOut();
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (!m_bFadeIn)
         {
-            m_bFadeOut = true;
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                m_bFadeOut = true;
+            }
         }
     }
 
     public void FadeIn()
     {
-        m_fAlpha -= m_fSpeed;
+        m_fAlpha -= Time.deltaTime / m_fTime;
         m_Image.color = new Color(m_fRed, m_fGreen, m_fblue, m_fAlpha);
         if (m_fAlpha <= 0.0f)
         {
@@ -63,7 +68,7 @@ public class SceneTransition : MonoBehaviour
     public void FadeOut()
     {        
         m_Image.enabled = true;
-        m_fAlpha += m_fSpeed;
+        m_fAlpha += Time.deltaTime / m_fTime;
         m_Image.color = new Color(m_fRed, m_fGreen, m_fblue, m_fAlpha);
         if (m_fAlpha >= 1.0f)
         {
