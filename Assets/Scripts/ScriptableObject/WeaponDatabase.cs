@@ -38,10 +38,12 @@ public struct WeaponData
     public GameObject weaponPrefab;
     [Header("武器の攻撃用プレハブ")]
     public GameObject weaponAttackPrefab;
+    [Header("武器のアイコン用プレハブ")]
+    public GameObject weaponIconPrefab;
 }
 
 [CreateAssetMenu(fileName = "WeaponDatabase", menuName = "Scriptable Objects/WeaponDatabase")]
-public class EnemyDatabase : ScriptableObject
+public class WeaponDatabase : ScriptableObject
 {
-    public WeaponData[] weaponDatas;
+    public WeaponData[] m_WeaponDatas;
 }

@@ -396,7 +396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3687e53810e369e4b8c94732dbb24e27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_sNextScene: SceneGame
+  m_sNextScene: SceneWeaponSelect
   m_fTime: 1
 --- !u!1 &1566162422
 GameObject:
