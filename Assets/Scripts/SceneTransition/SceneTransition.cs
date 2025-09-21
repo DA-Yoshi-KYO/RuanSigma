@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -8,7 +6,9 @@ public class SceneTransition : MonoBehaviour
 {
     [SerializeField] string m_sNextScene;
 
-    [SerializeField] public float m_fTime;
+    [SerializeField] private float m_fTime;
+
+    [SerializeField] private bool m_bReadClick = true; // クリックを検知するかどうか
 
     private Image m_Image;
 
@@ -46,7 +46,7 @@ public class SceneTransition : MonoBehaviour
 
         if (!m_bFadeIn)
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            if (Input.GetKeyDown(KeyCode.Mouse0) && m_bReadClick)
             {
                 m_bFadeOut = true;
             }
@@ -85,6 +85,12 @@ public class SceneTransition : MonoBehaviour
     }
     public void SetFadeOut(bool fadeout)
     {
-        m_bFadeIn = fadeout;
+        m_bFadeOut = fadeout;
+    }
+
+    // Getter関数
+    public bool IsFade()
+    {
+        return m_bFadeIn || m_bFadeOut;
     }
 }
