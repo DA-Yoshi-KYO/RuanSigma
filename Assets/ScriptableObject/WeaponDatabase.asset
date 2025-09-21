@@ -9,44 +9,59 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 03ce9bf36c3033b46ba296da5554dad0, type: 3}
   m_Name: WeaponDatabase
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyDatabase
-  weaponDatas:
+  m_EditorClassIdentifier: 
+  m_WeaponDatas:
   - weaponData:
-      Name: "\u6728\u306E\u5263"
+      Name: 
       Kind: 0
-      attackPower: 5
-      attackMinLength: 3
-      attackMaxLength: 3
-      attackRange: {x: 1, y: 1, z: 1}
-    weaponPrefab: {fileID: 0}
+      attackPower: 0
+      attackMinLength: 0
+      attackMaxLength: 0
+      attackRange: {x: 0, y: 0, z: 0}
+    weaponPrefab: {fileID: 3815642642501524960, guid: 623f96ec82c76b6478650453ae3bc093,
+      type: 3}
     weaponAttackPrefab: {fileID: 7664247300431019302, guid: cb7604ebaf60131429789aac9a250e00,
       type: 3}
+    weaponIconPrefab: {fileID: 4179903721278019684, guid: dd65d74857893424b97141e27750b041,
+      type: 3}
   - weaponData:
-      Name: "\u6728\u306E\u77ED\u5263"
-      Kind: 1
-      attackPower: 5
-      attackMinLength: 3
-      attackMaxLength: 3
-      attackRange: {x: 1, y: 1, z: 1}
-    weaponPrefab: {fileID: 0}
-    weaponAttackPrefab: {fileID: 0}
+      Name: 
+      Kind: 0
+      attackPower: 0
+      attackMinLength: 0
+      attackMaxLength: 0
+      attackRange: {x: 0, y: 0, z: 0}
+    weaponPrefab: {fileID: 3815642642501524960, guid: b6163cdbb20549343b9a449687ebdef3,
+      type: 3}
+    weaponAttackPrefab: {fileID: 7664247300431019302, guid: 47856eaf56fe8354898626463984fbc6,
+      type: 3}
+    weaponIconPrefab: {fileID: 4179903721278019684, guid: 92aa8eae22983324882dc199caa3e380,
+      type: 3}
   - weaponData:
-      Name: "\u6728\u306E\u5F13"
-      Kind: 2
-      attackPower: 5
-      attackMinLength: 3
-      attackMaxLength: 3
-      attackRange: {x: 1, y: 1, z: 1}
-    weaponPrefab: {fileID: 0}
-    weaponAttackPrefab: {fileID: 0}
+      Name: 
+      Kind: 0
+      attackPower: 0
+      attackMinLength: 0
+      attackMaxLength: 0
+      attackRange: {x: 0, y: 0, z: 0}
+    weaponPrefab: {fileID: 3815642642501524960, guid: 8deae7a9a0f15964aac1e5a278b5f03d,
+      type: 3}
+    weaponAttackPrefab: {fileID: 7664247300431019302, guid: b528272bc762a724c91d4a5b291613d8,
+      type: 3}
+    weaponIconPrefab: {fileID: 4179903721278019684, guid: fc2a9380734d610429f118e0f83299f9,
+      type: 3}
   - weaponData:
-      Name: "\u6728\u306E\u30AF\u30ED\u30B9\u30DC\u30A6"
-      Kind: 3
-      attackPower: 5
-      attackMinLength: 3
-      attackMaxLength: 3
-      attackRange: {x: 1, y: 1, z: 1}
-    weaponPrefab: {fileID: 0}
-    weaponAttackPrefab: {fileID: 0}
+      Name: 
+      Kind: 0
+      attackPower: 0
+      attackMinLength: 0
+      attackMaxLength: 0
+      attackRange: {x: 0, y: 0, z: 0}
+    weaponPrefab: {fileID: 3815642642501524960, guid: 4673988177a2e9244990256b17232aa0,
+      type: 3}
+    weaponAttackPrefab: {fileID: 7664247300431019302, guid: 1c5abacc7c2a32342a855d7a2b1d1fba,
+      type: 3}
+    weaponIconPrefab: {fileID: 4179903721278019684, guid: b504cf539ffc2a540926e0527b731ef7,
+      type: 3}
