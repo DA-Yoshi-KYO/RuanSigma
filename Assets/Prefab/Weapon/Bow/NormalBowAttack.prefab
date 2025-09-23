@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4097387321805130015}
   - component: {fileID: 3818908933315186236}
   m_Layer: 0
-  m_Name: NormalMiddleBowAttack
+  m_Name: NormalBowAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7827207885309768919}
   m_Layer: 0
-  m_Name: NormalMiddleBowIcon
+  m_Name: NormalBowIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0fb8b3a7faa9363429dd5ec1ff5d62b2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 80d75a8922e0f764d8a1271e5c3ed299, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
