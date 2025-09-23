@@ -45,5 +45,6 @@ public struct WeaponData
 [CreateAssetMenu(fileName = "WeaponDatabase", menuName = "Scriptable Objects/WeaponDatabase")]
 public class WeaponDatabase : ScriptableObject
 {
+    // •Ší‚ğŠi”[‚µ‚Ä‚¢‚é”z—ñ
     public WeaponData[] m_WeaponDatas;
 }

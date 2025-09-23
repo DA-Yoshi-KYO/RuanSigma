@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -18,8 +19,10 @@ public class DebugSystem : MonoBehaviour
     {
         if (m_bDebugMode)
         {
+#if UNITY_EDITOR
             DebugSceneTransition();
             DebugGameSystem();
+#endif
         }
     }
 
@@ -47,7 +50,7 @@ public class DebugSystem : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Application.Quit();
+            EditorApplication.isPlaying = false; // エディタ上の実行を停止
         }
     }
 }

@@ -25,12 +25,12 @@ public class InitialWeaponSelect : MonoBehaviour
     /// プレイヤーの初期武器をセットします
     /// </summary>
     /// <param name="index">
-    /// 初期武器に使用する武器のデータベース上インデックス(0～3)
+    /// 初期武器に使用する武器のデータベース上インデックス(0～1)
     /// </param>
     public void SetInitialWeapon(int index)
     {
-        // 初期武器はデータベース内の0～3のインデックス内から選択する
-        if (index < 0 || index >= 4)
+        // 初期武器はデータベース内の0～1のインデックス内から選択する
+        if (index < 0 || index >= 2)
         {
             Debug.Log("初期武器の範囲外を参照しています");
             return;
