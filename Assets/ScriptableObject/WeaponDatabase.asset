@@ -20,37 +20,11 @@ MonoBehaviour:
       attackMinLength: 0
       attackMaxLength: 0
       attackRange: {x: 0, y: 0, z: 0}
-    weaponPrefab: {fileID: 3815642642501524960, guid: 623f96ec82c76b6478650453ae3bc093,
-      type: 3}
-    weaponAttackPrefab: {fileID: 7664247300431019302, guid: cb7604ebaf60131429789aac9a250e00,
-      type: 3}
-    weaponIconPrefab: {fileID: 4179903721278019684, guid: dd65d74857893424b97141e27750b041,
-      type: 3}
-  - weaponData:
-      Name: 
-      Kind: 0
-      attackPower: 0
-      attackMinLength: 0
-      attackMaxLength: 0
-      attackRange: {x: 0, y: 0, z: 0}
     weaponPrefab: {fileID: 3815642642501524960, guid: b6163cdbb20549343b9a449687ebdef3,
       type: 3}
     weaponAttackPrefab: {fileID: 7664247300431019302, guid: 47856eaf56fe8354898626463984fbc6,
       type: 3}
     weaponIconPrefab: {fileID: 4179903721278019684, guid: 92aa8eae22983324882dc199caa3e380,
-      type: 3}
-  - weaponData:
-      Name: 
-      Kind: 0
-      attackPower: 0
-      attackMinLength: 0
-      attackMaxLength: 0
-      attackRange: {x: 0, y: 0, z: 0}
-    weaponPrefab: {fileID: 3815642642501524960, guid: 8deae7a9a0f15964aac1e5a278b5f03d,
-      type: 3}
-    weaponAttackPrefab: {fileID: 7664247300431019302, guid: b528272bc762a724c91d4a5b291613d8,
-      type: 3}
-    weaponIconPrefab: {fileID: 4179903721278019684, guid: fc2a9380734d610429f118e0f83299f9,
       type: 3}
   - weaponData:
       Name: 

@@ -689,7 +689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_sNextScene: SceneResult
   m_fTime: 1
-  m_bReadClick: 1
+  m_bReadClick: 0
 --- !u!114 &975617115
 MonoBehaviour:
   m_ObjectHideFlags: 0
