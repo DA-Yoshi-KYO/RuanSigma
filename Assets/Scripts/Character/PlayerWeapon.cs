@@ -14,8 +14,11 @@ public class PlayerWeapon : MonoBehaviour
         m_CurrentWeapon = InitialWeaponSelect.m_tInitialWeapon;
 
         // 武器のアイコンをインスタンス化し、キャンバス内のUIの子に設定
-        GameObject parent = GameObject.Find("MyWeapon");
-        GameObject child = Instantiate(m_CurrentWeapon.weaponIconPrefab, parent.transform);
+        if (m_CurrentWeapon.weaponIconPrefab != null)
+        {
+            GameObject parent = GameObject.Find("MyWeapon");
+            GameObject child = Instantiate(m_CurrentWeapon.weaponIconPrefab, parent.transform);
+        }
     }
 
     // Update is called once per frame

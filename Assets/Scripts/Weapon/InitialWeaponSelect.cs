@@ -4,7 +4,7 @@ using UnityEngine;
 public class InitialWeaponSelect : MonoBehaviour
 {
     [DoNotSerialize]
-    static public WeaponData m_tInitialWeapon;  // プレイヤーの初期武器
+    static public WeaponData m_tInitialWeapon = new WeaponData { weaponData = { }, weaponAttackPrefab = null, weaponIconPrefab = null, weaponPrefab = null };   // プレイヤーの初期武器
     [SerializeField]
     [Header("武器のデータベース")]
     WeaponDatabase m_WeaponDatabase;  // 武器のデータベース
