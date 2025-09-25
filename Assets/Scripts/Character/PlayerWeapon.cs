@@ -19,6 +19,17 @@ public class PlayerWeapon : MonoBehaviour
             GameObject parent = GameObject.Find("MyWeapon");
             GameObject child = Instantiate(m_CurrentWeapon.weaponIconPrefab, parent.transform);
         }
+
+        // 使用している武器種の攻撃処理用コンポーネントを有効にする
+        switch(m_CurrentWeapon.weaponData.Kind)
+        {
+            case WeaponKind.Dagger:
+                GetComponent<PlayerBowAttack>().enabled = false;
+                break;
+            case WeaponKind.Bow:
+                GetComponent<PlayerBowAttack>().enabled = true;
+                break;
+        }
     }
 
     // Update is called once per frame

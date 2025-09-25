@@ -4,10 +4,8 @@ using UnityEngine;
 // 武器種
 public enum WeaponKind
 {
-    Sword,
     Dagger,
-    MiddleBow,
-    FarBow
+    Bow
 }
 
 // 武器のステータス

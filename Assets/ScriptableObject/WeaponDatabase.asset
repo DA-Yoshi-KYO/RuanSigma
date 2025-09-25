@@ -27,12 +27,12 @@ MonoBehaviour:
     weaponIconPrefab: {fileID: 4179903721278019684, guid: 92aa8eae22983324882dc199caa3e380,
       type: 3}
   - weaponData:
-      Name: 
-      Kind: 0
-      attackPower: 0
-      attackMinLength: 0
-      attackMaxLength: 0
-      attackRange: {x: 0, y: 0, z: 0}
+      Name: "\u6728\u306E\u5F13"
+      Kind: 1
+      attackPower: 5
+      attackMinLength: 10
+      attackMaxLength: 60
+      attackRange: {x: 1, y: 1, z: 1}
     weaponPrefab: {fileID: 3815642642501524960, guid: 4673988177a2e9244990256b17232aa0,
       type: 3}
     weaponAttackPrefab: {fileID: 7664247300431019302, guid: 1c5abacc7c2a32342a855d7a2b1d1fba,
